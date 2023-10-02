@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta name="viewport" content="with=device-width, initial-scale=1.0">
+            <title>Programming World Homepage</title>
+            <link rel="stylesheet" type="text/css" href="programming_world.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+            <script src="https://kit.fontawesome.com/6185edbb66.js"></script>
+        </head>
+            <body>
+                <section class="header">
+                    <nav>
+                        <img src="LOGO.png" style="height: 60px; width: auto;">
+                            <div class="nav-links" id="navLinks">
+                                <i class="fa fa-times" onclick="hideMenu()" style="margin: 17px;"></i>
+                                <ul>
+                                    <li><a href="programming_world.html">HOME</a></li>
+                                    <li><a href="About Us.html">ABOUT US</a></li>
+                                    <li><a href="Courses.html">COURSES</a></li>
+                                    <li><a href="Community.html">COMMUNITY</a></li>
+                                    <li><a href="Contact Us.html">CONTACT US</a></li>
+                                </ul>
+                            </div>   
+                        <i class="fa fa-bars" onclick="showMenu()"></i> 
+                    </nav>
+                        <div class="text-box">
+                            <h1>Welcome!<br>Programmers and Developers</h1>
+                            <p>
+                                <span id="typing-text"></span>
+                            </p>
+                            <a href="login-and-sign_up.html" class="hero-btn">Get Started</a>
+                        </div>
+                </section>
+
+                <section class="course">
+                    <h1>Top Programming Language</h1>
+                        <p style="color: rgb(216, 223, 206); padding-bottom: 20px;">
+                            This virtual world offers a plethora of features and tools that empower users to 
+                            learn, collaborate, and excel in the realm of programming or developing.
+                        </p>
+                    <div class="row">
+                        <div class="course-col">
+                            <h3>Java</h3>
+                                <p style="color: rgb(0, 44, 44);">
+                                    The name JAVA refers to a computer-based programming language that is used to develop computer-based 
+                                    applications. It is not an abbreviation and does not have a specific full form. However, 
+                                    the 'Just Another Virtual Accelerator' is a fictionalized complete version of JAVA and the name is 
+                                    given by the general public.
+                                </p>
+                        </div>
+                        <div class="course-col">
+                            <h3>Python</h3>
+                                <p style="color: rgb(0, 44, 44);">
+                                    Python is a computer programming language often used to build websites and software, automate tasks, and conduct
+                                    data analysis. Python is a general-purpose language, meaning it can be used to create a variety of different 
+                                    programs and isn't specialized for any specific problems. 
+                                </p>
+                        </div>
+                        <div class="course-col">
+                            <h3>C++</h3>
+                                <p style="color: rgb(0, 44, 44);">
+                                    C++ is an object-oriented programming language which gives a clear structure to programs and allows code 
+                                    to be reused, lowering development costs. C++ is portable and can be used to develop applications that can 
+                                    be adapted to multiple platforms. C++ is fun and easy to learn
+                                </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="course-col">
+                            <h3>C programming</h3>
+                                <p style="color: rgb(0, 44, 44);">
+                                    C is the combination of both low level (assembly) and high-level programming languages; also, it can be used
+                                    to write an application and interact with low-level system memory and hardware. It can be written on practically
+                                    any operating system and even works in most handheld devices.
+                                </p>
+                        </div>
+                        <div class="course-col">
+                            <h3>Javascript</h3>
+                                <p style="color: rgb(0, 44, 44);">
+                                    JavaScript is a scripting language for creating dynamic web page content. It creates elements for improving
+                                     site visitors' interaction with web pages, such as dropdown menus, animated graphics, and dynamic background colors. 
+                                </p>
+                        </div>
+                        <div class="course-col">
+                            <h3>C#</h3>
+                                <p style="color: rgb(0, 44, 44);">
+                                    C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# enables developers
+                                    to build many types of secure and robust applications that run in .NET. C# has its roots in the C family of languages.
+                                </p>
+                        </div>
+                    </div>
+                </section>
+                
+                
+                <script>
+                    const text = "Programming World is an innovative and comprehensive platform designed to cater to the needs of programming enthusiasts and developers from all around the globe.";
+                    const typingSpeed = 30;
+                    const typingTextElement = document.getElementById("typing-text");
+                
+                    let charIndex = 0;
+                
+                    function typeText() {
+                        if (charIndex < text.length) {
+                            typingTextElement.innerHTML += text.charAt(charIndex);
+                            charIndex++;
+                            setTimeout(typeText, typingSpeed);
+                        }
+                    }
+                
+                    window.addEventListener("load", () => {
+                        typeText();
+                    });
+                </script>
+                
+                <script>
+
+                    var navLinks = document.getElementById("navLinks");
+                        function showMenu(){
+                            navLinks.style.right = "0";
+                        }
+                        function hideMenu(){
+                            navLinks.style.right = "-200px";
+                        }
+
+                </script>
+                
+                
+            </body>
+
+                <footer>
+                    <div class="row">
+                        <div class="col" class="logo">
+                            <center><img src="LOGO.png" style="height: 60px; width: auto;"></center>
+                                <p>
+                                        At Programming World, we respect the privacy of our website visitors and are 
+                                        committed to protecting their personal information. This Privacy Policy 
+                                        outlines how we collect, use, store, and disclose data when you interact with 
+                                        our website. By using our website, you agree to the 
+                                    <a href="terms-of-service.html"
+                                        style="color: rgb(241, 76, 10);"> Terms of Services  
+                                    </a> by this 
+                                    <a href="privacy policy.html"
+                                        style="color: #6cdd02;">
+                                        Privacy Policy
+                                    </a>.
+                                    Click here to read the Privacy Policy in full.
+                                </p>
+                        </div>
+
+                        <div class="col">
+                            <h3>Get in Touch <div class="underline"><span></span></div></h3>
+                            <p>http://www.programmingworld.net/</p>
+                            <p>contact.us@programmingworld.net</p>
+                            <p>Prog_World_fb.com</p>
+                            <p class="email-id">ProgrammingWorld@email.com</p>
+                            +92 308 1422000
+                        </div>
+
+                        <div class="col">
+                            <h3>Links<div class="underline"><span></span></h3>
+                                <ul>
+                                <li><a href="programming_world.html">Home</a></li>
+                                <li><a href="About Us.html">About</a></li>
+                                <li><a href="#">Courses</a></li>
+                                <li><a href="Community.html">Community</a></li>
+                                <li><a href="Contact Us.html">Contact Us</a></li>
+                                </ul>
+                        </div>
+        
+                        <div class="col">
+                            <h3>Newsletter<div class="underline"><span></span></h3>
+                                <form>
+                                    <i class="far fa-envelope" style="color: rgb(192, 192, 0);"></i>
+                                        <input type="email" placeholder="Enter your Email Id" required>
+                                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                                </form>   
+                            <div class="social-icons" 
+                                    style="display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;">
+                                <i class="fa fa-facebook" aria-hidden="true" 
+                                    style="padding: 13px; 
+                                        font-size: 15px;
+                                        color: rgb(0, 47, 255);">
+                                </i>
+                                <i class="fa fa-instagram" aria-hidden="true" 
+                                    style="padding: 13px; 
+                                        font-size: 15px;
+                                        color: rgb(255, 0, 149);">
+                                </i>
+                                <i class="fa fa-youtube-play" aria-hidden="true" 
+                                    style="padding: 13px; 
+                                        font-size: 15px;
+                                        color: rgb(255, 52, 52);">
+                                </i>
+                                <i class="fa fa-twitter" aria-hidden="true" 
+                                    style="padding: 13px; 
+                                        font-size: 15px;
+                                        color: rgb(22, 159, 223);">
+                                </i>
+                                <i class="fa fa-linkedin" aria-hidden="true" 
+                                    style="padding: 13px; 
+                                        font-size: 15px;
+                                        color: rgb(255, 255, 255);">
+                                </i>                 
+                            </div>
+                        </div>    
+                    </div>
+                    <hr>
+                    <p class="copyright">Programming World @ 2023 - All Right Reserved</p>
+                </footer>
+                
+    </html>
 
