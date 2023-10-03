@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>About Us - Programming World</title>
+            <link rel="stylesheet" type="text/css" href="aboutus.css"/>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+            <script src="https://kit.fontawesome.com/6185edbb66.js"> </script>
+        </head>
+        <body>
+            <header>
+                <nav>
+                    <img src="LOGO.png" style="height: 60px; width: auto;">
+                        <div class="nav-links" id="navLinks">
+                            <i class="fa fa-times" onclick="hideMenu()" style="margin: 17px;"></i>
+                            <ul>
+                                <li><a href="programming_world.html">HOME</a></li>
+                                <li><a href="About Us.html">ABOUT US</a></li>
+                                <li><a href="Courses.html">COURSES</a></li>
+                                <li><a href="Community.html">COMMUNITY</a></li>
+                                <li><a href="Contact Us.html">CONTACT US</a></li>
+                            </ul>
+                        </div>   
+                    <i class="fa fa-bars" onclick="showMenu()"></i> 
+                </nav>
+                <h1>ABOUT US</h1>
+                    <p>
+                        <span id="welcomeText"></span>
+                    </p>
+            </header>
+                <div class="container">
+                    <h2><center>Who We Are</center></h2>
+
+                    <div class="centered-text">
+                        Programming World is a passionate community of developers, programmers, and tech enthusiasts who share a common love for all things coding. Our mission is to empower and inspire individuals to explore the vast and ever-evolving world of programming, making it accessible to beginners and enriching the knowledge of seasoned developers.
+                    </div>
+                    
+                    <div class="vision-section">
+                        <div class="vision-text">
+                            <h2>Our Vision</h2>
+                            <p>At Programming World, we envision a future where coding is not just a skill but a gateway to creativity, 
+                                problem-solving, and innovation. We believe that programming is for everyone, regardless of their background, 
+                                age, or experience level. Our goal is to bridge the gap between technology and people, making it easier for 
+                                everyone to harness the power of code.
+                            </p>
+                        </div>
+                        <div class="vision-image">
+                            <img src="vision.jpg" alt="Vision Image" width="390" >
+                        </div>
+                    </div>
+
+                    <div class="mission-section">
+                        <div class="mission-text">
+                            <h2>Our Mission</h2>
+                            <p>Our mission is to provide high-quality programming resources, tutorials, and a supportive community to 
+                                empower individuals at every stage of their coding journey. We strive to make programming education 
+                                accessible and enjoyable for all, fostering a passion for technology and innovation.
+                            </p>
+                        </div>
+                        <div class="mision-image">
+                            <img src="mission.jpg" alt="Mision Image" width="390">
+                        </div>
+                    </div>
+
+                    <h2 style="padding: 0 45px;">Meet the Team</h2>
+                        <p class="team-description" style="color: #dbdbdb; line-height: 1.5;">
+                            Our dedicated team of developers, writers, and tech enthusiasts is passionate about helping you succeed in your programming journey. Meet the people behind Programming World who work tirelessly to bring you high-quality content and resources.
+                        </p>
+
+                    <div class="team-section">
+                        <div class="team-member">
+                            <img src="johnmicheal.jpg" alt="Team Member 1" class="team-member-image">
+                                <div>
+                                    <h3>John Micheal Andrade</h3>
+                                    <p>Founder and CEO</p>
+                                </div>
+                        </div>
+
+                        <div class="team-member">
+                            <img src="james.jpg" alt="Team Member 2" class="team-member-image">
+                                <div>
+                                    <h3>James Projillo</h3>
+                                    <p>Editor-in-Chief</p>
+                                </div>
+                        </div>
+
+                        <div class="team-member">
+                            <img src="340772628_708332511039247_1826628253693755088_n.jpg" alt="Team Member 3" class="team-member-image">
+                                <div>
+                                    <h3>Geriejeyd Espiña</h3>
+                                    <p>Lead Developer</p>
+                                </div>
+                        </div>
+                    </div>
+
+                    <h2 style="padding: 0 45px;">
+                        Get in Touch
+                    </h2>
+                        <p style="color: #dbdbdb; padding: 20px 55px; line-height: 1.5;">
+                            We'd love to hear from you! If you have any questions, suggestions, or feedback, please don't hesitate to contact us. 
+                            You can reach us through our <a href="Contact Us.html">contact form</a> or connect with us on social media.
+                        </p>
+                    <h2 style="padding: 0 45px;">
+                        Join Us on the Journey
+                    </h2>
+                        <p style="color: #dbdbdb; padding: 20px 55px; line-height: 1.5;">
+                            Join us on this exciting journey through the world of programming. Whether you're a beginner or a seasoned pro, 
+                            Programming World is your destination for all things code-related. Together, let's unlock the endless 
+                            possibilities of the programming universe!
+                        </p>
+                    
+                    <button id="changeTextBtn">
+                        Like this Website?
+                    </button>
+                        <center>
+                        <p id="changeableText" style="color: #dbdbdb; padding: 50px;">
+                            
+                        </p>
+                        </center>
+                </div>
+
+            <script>
+                const welcomeText = document.getElementById('welcomeText');
+                const textToType = "Welcome to Programming World!";
+                let index = 0;
+
+            function typeText() {
+                if (index < textToType.length) {
+                    welcomeText.textContent += textToType.charAt(index);
+                        index++;
+                    setTimeout(typeText, 100); 
+                }
+            }
+
+                    typeText(); 
+
+                    const changeTextButton = document.getElementById('changeTextBtn');
+                    const changeableText = document.getElementById('changeableText');
+
+                        changeTextButton.addEventListener('click', () => {
+                    const textToType = "Thanks for Liking Us, Happy Coding! 😊 💻 ☕";
+                    let index = 0;
+
+            function typeText() {
+                if (index < textToType.length) {
+                    changeableText.textContent += textToType.charAt(index);
+                        index++;
+                    setTimeout(typeText, 30);
+                    }
+                }
+
+                    typeText();
+                    }
+                );
+ 
+            </script>
+            
+            <script>
+
+                var navLinks = document.getElementById("navLinks");
+                    function showMenu(){
+                        navLinks.style.right = "0";
+                }
+                    function hideMenu(){
+                        navLinks.style.right = "-200px";
+                }
+            
+            </script>
+            
+            <footer>
+                <div class="row">
+                    <div class="col" class="logo">
+                        <center><img src="LOGO.png" style="height: 60px; width: auto;"></center>
+                            <p>
+                                    At Programming World, we respect the privacy of our website visitors and are 
+                                    committed to protecting their personal information. This Privacy Policy 
+                                    outlines how we collect, use, store, and disclose data when you interact with 
+                                    our website. By using our website, you agree to the 
+                                <a href="terms-of-service.html"
+                                    style="color: rgb(241, 76, 10);"> Terms of Services  
+                                </a> by this 
+                                <a href="privacy policy.html"
+                                    style="color: #6cdd02;">
+                                    Privacy Policy
+                                </a>.
+                                Click here to read the Privacy Policy in full.
+                            </p>
+                    </div>
+
+                    <div class="col">
+                        <h3>Get in Touch <div class="underline"><span></span></div></h3>
+                        <p>http://www.programmingworld.net/</p>
+                        <p>contact.us@programmingworld.net</p>
+                        <p>Prog_World_fb.com</p>
+                        <p class="email-id">ProgrammingWorld@email.com</p>
+                        +92 308 1422000
+                    </div>
+
+                    <div class="col">
+                        <h3>Links<div class="underline"><span></span></h3>
+                            <ul>
+                            <li><a href="programming_world.html">Home</a></li>
+                            <li><a href="About Us.html">About</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="Contact Us.html">Contact Us</a></li>
+                            </ul>
+                    </div>
+    
+                    <div class="col">
+                        <h3>Newsletter<div class="underline"><span></span></h3>
+                            <form>
+                                <i class="far fa-envelope" style="color: rgb(192, 192, 0);"></i>
+                                    <input type="email" placeholder="Enter your Email Id" required>
+                                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                            </form>   
+                        <div class="social-icons" 
+                                style="display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;">
+                            <i class="fa fa-facebook" aria-hidden="true" 
+                                style="padding: 13px; 
+                                    font-size: 15px;
+                                    color: rgb(0, 47, 255);">
+                            </i>
+                            <i class="fa fa-instagram" aria-hidden="true" 
+                                style="padding: 13px; 
+                                    font-size: 15px;
+                                    color: rgb(255, 0, 149);">
+                            </i>
+                            <i class="fa fa-youtube-play" aria-hidden="true" 
+                                style="padding: 13px; 
+                                    font-size: 15px;
+                                    color: rgb(255, 52, 52);">
+                            </i>
+                            <i class="fa fa-twitter" aria-hidden="true" 
+                                style="padding: 13px; 
+                                    font-size: 15px;
+                                    color: rgb(22, 159, 223);">
+                            </i>
+                            <i class="fa fa-linkedin" aria-hidden="true" 
+                                style="padding: 13px; 
+                                    font-size: 15px;
+                                    color: rgb(255, 255, 255);">
+                            </i>                 
+                        </div>
+                    </div>    
+                </div>
+                <hr>
+                <p class="copyright">Programming World @ 2023 - All Right Reserved</p>
+            </footer>
+        </body>
+    </html>
