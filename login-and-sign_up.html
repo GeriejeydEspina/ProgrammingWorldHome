@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Log-in</title>
+            <link rel="stylesheet" href="login-and-sign_up_styles.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        </head>
+        <body>
+            <div class="main-container">
+                <div class="login-container-left">
+                    <h2>Hello there, <br> aspiring programmer!</h2><br><br>
+                    <p>
+                        We're thrilled to welcome you to our programming community, where beginners like you embark on 
+                        exciting coding adventures. Whether you're curious about the basics or eager to dive deep into 
+                        the world of programming, you're in the right place.<br><br>Happy coding! 🚀✨
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="login-container-right">
+                    <h1>LOGIN</h1>
+                    <div class="input-group">
+                        <i class="fas fa-envelope icon"></i>
+                        <input type="text" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock icon"></i>
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                            <div class="block">
+                                <input type="checkbox" style="width:15px">
+                                <p>
+                                    Remember me
+                                </p>
+                                <a href="#" style="margin-top: 1rem; margin-right: -5px;">
+                                    Forgot Password?
+                                </a>
+                            </div>            
+                        <button type="submit">Login</button>
+                    <p style="margin-left: -8rem;">
+                        Don't have an Account?
+                    </p>
+                    <a href="Sign_up.html" style="margin-right: 1rem;">
+                        Create Account
+                    </a>   
+                    
+                    <p style="margin-left: -5px;">
+                        By clicking the "Login" you agree to the <br>
+                    </p>
+                    <p style="margin-right: 30px;">
+                        <a href="terms-of-service.html" style="margin: 5px; color: #b1412e;">
+                            Terms of Services
+                        </a>
+                        <a href="privacy policy.html" style="margin: 5px; color: #5cbe00;">
+                            Privacy Policy
+                        </a>
+                    </p>                
+                </div>
+            </div>
+         
+            <script>
+                document.getElementById("login-form").addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    var username = document.getElementById("username").value;
+                    var password = document.getElementById("password").value;
+    
+                if (username === "your_username" && password === "your_password") {
+       
+                    window.location.href = "dashboard.html";
+                } 
+                else {
+                    document.getElementById("error-message").innerText = "Invalid username or password. Please try again.";
+                }
+                });
+            </script>
+
+        </body>
+    </html>
