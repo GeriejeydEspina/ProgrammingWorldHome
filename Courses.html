@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Courses</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splide@3.0.8/dist/css/splide.min.css">
+            <link rel="stylesheet" type="text/css" href="courses.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+            <script src="https://kit.fontawesome.com/6185edbb66.js"></script>
+        </head>
+
+        <body>
+            <div class="header">
+                <h1><center>Courses</center></h1>
+                <div class="typing-text">
+                    <h3>🚀 Dive into the world of programming and development with our expertly crafted courses. Whether you're a
+                        beginner eager to learn the basics or a seasoned developer aiming to sharpen your skills, our courses are 
+                        tailored just for you. Explore a range of topics, from fundamental programming languages to advanced 
+                        development techniques. Our passionate instructors are here to guide you, step by step, on your coding journey.
+                        Join us and unlock the secrets of coding creativity. Let's turn your passion for programming into a powerful 
+                        skillset that can shape the future.<br><br>                                                             
+                        <span id="text" style="color: #8f8f8f; margin-left: 3rem; font-size: 2rem;"></span>
+                        <span class="cursor"></span>
+                    </h3>
+                    <div class="side-image">
+                        <div class="image-container">
+                            <img src="ee2998cdb1cf6a6bf66bf65fe0076fd2.gif" alt="" width="300">
+                            <img src="68926cd545c79e1c86dbdc00c9055b7d.gif" alt="" width="300">
+                            <img src="ZbsXMM.gif" alt="" width="300">
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    const text = " Code your dreams into reality with Programming World!";
+                    let index = 0;
+                    let typingInterval;
+                
+                    function type() {
+                        document.getElementById('text').textContent += text[index];
+                        index++;
+                        if (index >= text.length) {
+                            clearInterval(typingInterval);
+                        }
+                    }
+                
+                    typingInterval = setInterval(type, 100);
+                </script>
+            </div>
+            <div class="container">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide" 
+                            style="background: linear-gradient(90deg, #000000dc, #000044d7, #004100d7), 
+                                url('Introduction\ to\ programming.jpg');">
+                            <h1><center>Introduction to programming</center></h1>
+                            <p>
+                                Learning and Understanding the basic principles and concepts of computer progrmaming. Involves
+                                writing instruction in a language that a computer can understand and execute. It allows us to create
+                                software application, website, games, and various tools that can automate tasks and solve problems.
+                                Programming languages provide s set of rules and syntax that allows developers to communicate with 
+                                computers.These languages include popular ones such as Python, Java, C++, and Javascript
+                                among others. Each languages has its own unique features and purposes, but they all share the goal of
+                                instructing computers to perform specific tasks. 
+                            </p>
+                            <a href="#"><center>Learn more</center></a>
+                        </div>
+                        <div class="slide" 
+                            style="background: linear-gradient(90deg, #000000, #000044f1, #004100c4), 
+                                url('Web\ Development\ Courses.jpg');">
+                            <h1><center>Web Development Courses</center></h1>
+                            <p>
+                                Web development courses may offered in various formats, including online courses, bootcamps, traditional
+                                classroom courses, and self-paced learning programs. 
+                                Web Development Courses are educational programs or courses that teach individuals the skills and 
+                                knowledge required to design, develop, and maintain website. These courses aim to provide a comprehensive
+                                understanding of web development concepts, including HTML, CSS, Javascript, server-side scripting,
+                                database management, and web frameworks.  
+                            </p>
+                            <a href="#"><center>Learn more</center></a>
+                        </div>
+                        <div class="slide" 
+                            style="background: linear-gradient(90deg, #000000, #000044f1, #004100c4), 
+                                url('mobile-app-development-trends.png');">
+                            <h1><center>Mobile App Development</center></h1>
+                            <p>
+                                Mobile app development refers to the process of creating software applications that run on mobile 
+                                devices such as smartphones and tablets. It involves designing, building, testing, and deploying 
+                                applications for various mobile platforms, including iOS (Apple devices) and Android (devices from 
+                                various manufacturers).
+                                Mobile app development can be native, where apps are built for a specific platform using languages 
+                                like Swift or Objective-C for iOS and Java or Kotlin for Android. Alternatively, developers can use 
+                                cross-platform frameworks like React Native, Flutter, or Xamarin, allowing them to write code once 
+                                and deploy the app on multiple platforms.
+                            </p>
+                            <a href="#"><center>Learn more</center></a>
+                        </div>
+                        <div class="slide" 
+                            style="background: linear-gradient(90deg, #000000, #000044f1, #004100c4), 
+                                url('Game\ development\ courses.jpg');">
+                            <h1><center>Game Development Courses</center></h1>
+                            <p>
+                                Game development courses are educational programs that teach students the skills and knowledge necessary to create video games.
+                                Game development courses provide in-depth instruction on game design principles, programming languages 
+                                such as C++, Unity, or Unreal Engine, 2D and 3D graphics, animation, sound design, and game testing. 
+                                These courses may also cover game marketing, monetization 
+                                strategies, and the business aspects of the gaming industry, preparing students for careers as game 
+                                developers, designers, or entrepreneurs in the gaming field.
+                            </p>
+                            <a href="#"><center>Learn more</center></a>
+                        </div>
+                        <div class="slide" 
+                            style="background: linear-gradient(90deg, #000000, #000044f1, #004100c4), 
+                                url('Database\ Management\ Courses.jpg');">
+                            <h1><center>Database Management Courses</center></h1>
+                            <p>
+                                Database management courses are educational programs that focus on teaching students the principles, 
+                                techniques, and tools used in managing and manipulating data within databases. These courses cover 
+                                various aspects of database systems, including database design, data modeling, SQL (Structured Query 
+                                Language) programming, data normalization, indexing, data security, and database administration.
+                                Database management courses are essential for individuals pursuing careers as database administrators, 
+                                data analysts, database developers, or IT professionals involved in managing and maintaining 
+                                organizational data systems. 
+                            </p>
+                            <a href="#"><center>Learn more</center></a>
+                        </div>
+                        <div class="slide" 
+                            style="background: linear-gradient(90deg, #000000, #000044f1, #004100c4), 
+                                url('DevOps\ and\ Cloud\ Computing\ Courses.jpg');">
+                            <h1><center>DevOps and Cloud Computing Courses</center></h1>
+                            <p>
+                                DevOps courses teach principles and practices that emphasize collaboration and communication between 
+                                software development and IT operations teams, aiming to automate and streamline the software development
+                                and IT operations processes. DevOps professionals focus on building, testing, and releasing software 
+                                more rapidly and reliably.
+                                Cloud computing courses cover the delivery of various services over the internet, including storage, 
+                                servers, databases, networking, software, analytics, and intelligence.
+                            </p>
+                            <a href="#"><center>Learn more</center></a>
+                        </div>
+                        <div class="slide" 
+                            style="background: linear-gradient(90deg, #000000, #000044f1, #004100c4), 
+                                url('Blockchain\ Development\ Courses.jpg');">
+                            <h1><center>Blockchain Development Courses</center></h1>
+                            <p>
+                                Blockchain development courses provide instruction on creating decentralized applications (DApps) 
+                                and smart contracts using blockchain technology. These courses cover concepts like cryptographic 
+                                hashing, consensus algorithms, and distributed ledger technology. Students learn to build, deploy, 
+                                and secure blockchain-based applications, gaining skills in blockchain platforms like Ethereum, 
+                                Hyperledger, or Solana. These courses prepare developers for careers in the emerging field of 
+                                blockchain, enabling them to create secure and transparent digital solutions.
+                            </p>
+                            <a href="#"><center>Learn more</center></a>
+                        </div>
+                        <div class="slide" 
+                            style="background: linear-gradient(90deg, #000000, #000044f1, #004100c4), 
+                                url('Software\ Engineering\ Courses.jpg');">
+                            <h1><center>Software Engineering Courses</center></h1>
+                            <p>
+                                Software engineering courses teach the systematic design, development, testing, and maintenance of 
+                                software applications and systems. These courses cover principles of software architecture, 
+                                algorithms, programming languages, and project management. Students learn how to analyze user 
+                                requirements, design software solutions, write efficient code, conduct testing, and manage software 
+                                projects, ensuring the development of high-quality and reliable software products. Software 
+                                engineering courses prepare individuals for careers as software developers, engineers, architects, 
+                                or project managers in the IT industry.
+                            </p>
+                            <a href="#"><center>Learn more</center></a>
+                        </div>
+                        <div class="slide" 
+                            style="background: linear-gradient(90deg, #000000, #000044f1, #004100c4), 
+                                url('Internet\ of\ Things\ \(IoT\)\ Courses.jpg');">
+                            <h1><center>Internet of Things (IoT) Courses</center></h1>
+                            <p>
+                                Internet of Things (IoT) courses focus on teaching the principles and techniques of connecting 
+                                everyday objects and devices to the internet, enabling them to collect, exchange, and process data. 
+                                These courses cover topics like sensors, communication protocols, data analysis, and IoT security. 
+                                Students learn to design, develop, and implement IoT solutions for various applications, such as 
+                                smart homes, healthcare, and industrial automation. IoT courses prepare individuals to create 
+                                innovative connected devices and applications in the rapidly evolving IoT industry.
+                            </p>
+                            <a href="#"><center>Learn more</center></a>
+                        </div>
+                        <div class="slide" 
+                            style="background: linear-gradient(90deg, #000000, #000044f1, #004100c4), 
+                                url('Quantum\ Computing\ Courses.jpg');">
+                            <h1><center>Quantum Computing Courses</center></h1>
+                            <p>
+                                Quantum computing courses explore the principles, algorithms, and technologies behind quantum computers. 
+                                These courses cover topics such as quantum mechanics, quantum gates, quantum algorithms, and quantum 
+                                programming languages. Students learn to harness the unique properties of quantum systems to solve 
+                                complex problems exponentially faster than classical computers. Quantum computing courses prepare 
+                                individuals for careers in the cutting-edge field of quantum technology, where they can develop 
+                                innovative solutions for cryptography, optimization, and scientific simulations.
+                            </p>
+                            <a href="#"><center>Learn more</center></a>
+                        </div>
+                        </div>
+                            <button class="prev-btn">&lt;</button>
+                            <button class="next-btn">&gt;</button>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+            <script>
+                const slider = document.querySelector('.slider');
+                const slides = document.querySelectorAll('.slide');
+                const prevBtn = document.querySelector('.prev-btn');
+                const nextBtn = document.querySelector('.next-btn');
+                let slideIndex = 0;
+                    nextBtn.addEventListener('click', () => {
+                        slideIndex++;
+                    if (slideIndex >= slides.length) {
+                        slideIndex = 0;
+                    }
+                    updateSlider();
+                    });
+                    prevBtn.addEventListener('click', () => {
+                        slideIndex--;
+                    if (slideIndex < 0) {
+                        slideIndex = slides.length - 1;
+                    }
+                    updateSlider();
+                    });
+                function updateSlider() {
+                    const translateValue = -slideIndex * 100 + '%';
+                        slider.style.transform = `translateX(${translateValue})`;
+                }
+            </script>  
+            <div class="gallery">
+                .
+            </div>  
+            <section class="layout">
+                <div class="A">
+                    <h1 style="color: #0101a0;">
+                        <center>
+                            Beginner💻
+                        </center>
+                    </h1>
+                    <p>Embarking on my coding journey and feeling thrilled! 🚀 Just started learning the basics and I'm already 
+                        fascinated by the endless possibilities. 💻🔍 Excited to explore the world of algorithms, loops, and 
+                        functions! 🔄🔤 Here's to countless lines of code and the joy of problem-solving! 🎉🔢 
+                        #NewbieProgrammer #ExcitedLearner #CodingAdventuresBegin 🌟
+                    </p><br>
+                    <center>
+                        <a href="#">Start up</a>
+                    </center>                  
+                </div>
+                <div class="B">
+                    <h1 style="color: #afaf00;">
+                        <center>
+                            Intermediate💻🖥️
+                        </center>
+                    </h1>
+                    <p>
+                        Diving deeper into the coding universe and loving the challenges! 🌌💡 Mastering algorithms, loops, and 
+                        functions feels like unlocking secrets. 🔐💻 Ready for more intricate problem-solving and creativity! 
+                        🎩🔢 #IntermediateCoder #CodingPassion #EndlessLearning 🚀🌟.Eager to collaborate, learn, and grow with 
+                        the coding community! #CodingAdventuresIntermediate
+                    </p><br>
+                    <center>
+                        <a href="#">Start up</a>
+                    </center>                  
+                </div>
+                <div class="B">
+                    <h1 style="color: #810000;">
+                        <center>
+                            Advance🎭🕵️‍♂️🖥️💻
+                        </center>
+                    </h1>
+                    <p>
+                        Diving deep into the intricacies of advanced programming, where algorithms transform into art and code 
+                        becomes poetry. Exploring data structures, machine learning, software architecture with unwavering 
+                        curiosity and determination. Ready to tackle complex challenges, innovate, and shape the future of technology!
+                        #AdvancedProgrammer #InnovationInCode
+                    </p><br>
+                    <center>
+                        <a href="#">Start up</a>
+                    </center>                   
+                </div>
+            </section>   
+            <div class="outside-box">
+                <div class="box">
+                    <span style="--i:1;"><img src="Desktop - 5.png" alt=""></span>
+                    <span style="--i:2;"><img src="Desktop - 6.png" alt=""></span>
+                    <span style="--i:3;"><img src="Desktop - 7.png" alt=""></span>
+                    <span style="--i:4;"><img src="Desktop - 8.png" alt=""></span>
+                    <span style="--i:5;"><img src="Desktop - 9.png" alt=""></span>
+                    <span style="--i:6;"><img src="Desktop - 10.png" alt=""></span>
+                    <span style="--i:7;"><img src="Desktop - 11.png" alt=""></span>
+                    <span style="--i:8;"><img src="Desktop - 12.png" alt=""></span>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                let box = document.querySelector('.box');
+                window.onmousemove = function(e){
+                    let x = e.clientX/3;
+                    box.style.transform = "perspective(1000px) rotateY(" + x + "deg)";
+                }
+            </script>
+        </body>
+        <footer>
+            <div class="row">
+                <div class="col" class="logo">
+                    <center><img src="LOGO.png" style="height: 60px; width: auto;"></center>
+                        <p>
+                                At Programming World, we respect the privacy of our website visitors and are 
+                                committed to protecting their personal information. This Privacy Policy 
+                                outlines how we collect, use, store, and disclose data when you interact with 
+                                our website. By using our website, you agree to the 
+                            <a href="terms-of-service.html"
+                                style="color: rgb(241, 76, 10);"> Terms of Services  
+                            </a> by this 
+                            <a href="privacy policy.html"
+                                style="color: #6cdd02;">
+                                Privacy Policy
+                            </a>.
+                            Click here to read the Privacy Policy in full.
+                        </p>
+                </div>
+
+                <div class="col">
+                    <h3>Get in Touch <div class="underline"><span></span></div></h3>
+                    <p>http://www.programmingworld.net/</p>
+                    <p>contact.us@programmingworld.net</p>
+                    <p>Prog_World_fb.com</p>
+                    <p class="email-id">ProgrammingWorld@email.com</p>
+                    +92 308 1422000
+                </div>
+
+                <div class="col">
+                    <h3>Links<div class="underline"><span></span></h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="About Us.html">About</a></li>
+                            <li><a href="Courses.html">Courses</a></li>
+                            <li><a href="Community.html">Community</a></li>
+                            <li><a href="Contact Us.html">Contact Us</a></li>
+                        </ul>
+                </div>
+
+                <div class="col">
+                    <h3>Newsletter<div class="underline"><span></span></h3>
+                        <form>
+                            <i class="far fa-envelope" style="color: rgb(192, 192, 0);"></i>
+                                <input type="email" placeholder="Enter your Email Id" required>
+                            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                        </form>   
+                    <div class="social-icons" 
+                            style="display: flex;
+                                align-items: center;
+                                justify-content: space-between;">
+                        <i class="fa fa-facebook" aria-hidden="true" 
+                            style="padding: 13px; 
+                                font-size: 15px;
+                                color: rgb(0, 47, 255);">
+                        </i>
+                        <i class="fa fa-instagram" aria-hidden="true" 
+                            style="padding: 13px; 
+                                font-size: 15px;
+                                color: rgb(255, 0, 149);">
+                        </i>
+                        <i class="fa fa-youtube-play" aria-hidden="true" 
+                            style="padding: 13px; 
+                                font-size: 15px;
+                                color: rgb(255, 52, 52);">
+                        </i>
+                        <i class="fa fa-twitter" aria-hidden="true" 
+                            style="padding: 13px; 
+                                font-size: 15px;
+                                color: rgb(22, 159, 223);">
+                        </i>
+                        <i class="fa fa-linkedin" aria-hidden="true" 
+                            style="padding: 13px; 
+                                font-size: 15px;
+                                color: rgb(255, 255, 255);">
+                        </i>                 
+                    </div>
+                </div>    
+            </div>
+            <hr>
+            <p class="copyright">Programming World @ 2023 - All Right Reserved</p>
+        </footer>
+    </html>
