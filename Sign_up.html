@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Create Account</title>
+            <link rel="stylesheet" href="sign_up-and-login_styles.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        </head>
+        <body>
+            <div class="main-container">
+                <div class="login-container-left">
+                    <h1>SIGN UP</h1>
+                        <input type="text" placeholder="Email" name="email" required>
+                        <input type="password" placeholder="Password" name="password" required>
+                        <input type="password" placeholder="Confirm Password" name="password" required>            
+                        <button type="submit">Sign up</button>
+                    <p style="margin-left: -6rem;">
+                        Already have an Account?
+                    </p>
+                    <a href="login-and-sign_up.html" style="margin-right: 1.5rem;">
+                        Log in
+                    </a>   
+                    
+                    <p style="margin-left: -5px;">
+                        By clicking the "Sign up" you agree to the <br>
+                    </p>
+                    <p style="margin-right: 32px;">
+                        <a href="terms-of-service.html" style="margin: 5px; color: #b1412e;">
+                            Terms of Services
+                        </a>
+                        <a href="privacy policy.html" style="margin: 5px; color: #5cbe00;">
+                            Privacy Policy
+                        </a>
+                    </p>                
+                </div>
+                <div class="login-container-right">
+                    <h2>Hello there, <br> aspiring programmer!</h2><br><br>
+                    <p>
+                        We're thrilled to welcome you to our programming community, where beginners like you embark on 
+                        exciting coding adventures. Whether you're curious about the basics or eager to dive deep into 
+                        the world of programming, you're in the right place.<br><br>Happy coding! 🚀✨
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+         
+            <script>
+                document.getElementById("login-form").addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    var username = document.getElementById("username").value;
+                    var password = document.getElementById("password").value;
+    
+                if (username === "your_username" && password === "your_password") {
+       
+                    window.location.href = "dashboard.html";
+                } 
+                else {
+                    document.getElementById("error-message").innerText = "Invalid username or password. Please try again.";
+                }
+                });
+            </script>
+
+        </body>
+    </html>
