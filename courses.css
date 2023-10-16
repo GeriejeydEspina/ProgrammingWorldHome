@@ -340,6 +340,7 @@ a{
 }
 @media (max-width: 768px){
     .outside-box{
+        overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
